@@ -15,9 +15,7 @@ Note: inputes required - 'yes' or 'no'. Inputtting 'no' will return the cheapest
 # Answer = ('yes')
 
 If 'Answer' = yes, then choose your starting/ender points. 
-For example, if you set start_point = 0 and end_point = 20, then you'll pull the top 21 airports by air traffic in 2017
-The only limitation here is that the max range of airports that can be scraped at once is: 55 airports
-In short, the script will throw an error if the 'end_point' - 'start_point' exceeds a search of >55 airports
+//For example, if you set start_point = 0 and end_point = 20, then you'll pull the top 21 airports by air traffic in 2017. Also, the main limitation here is that the max range of airports that can be scraped at once is: 55 airports. In short, the script will throw an error if the 'end_point' - 'start_point' exceeds a search of >55 airports
 
 # start_point = 0
 # end_point   = 50 
