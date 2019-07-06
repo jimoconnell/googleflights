@@ -9,13 +9,11 @@ Where do you want to go? These are you departing/arriving flight city parameter 
 # dep_city = ('San Francisco')
 # arv_city = ('Denver') 
 
-Do you want to choose the arrival destination based on the top US airports? 
-Note: inputes required - 'yes' or 'no'. Inputtting 'no' will return the cheapest roundtrip flight for airports listed above
+Do you want to choose the arrival destination based on the top US airports? Note: inputes required - 'yes' or 'no'. Inputtting 'no' will return the cheapest roundtrip flight for airports listed above
 
 # Answer = ('yes')
 
-If 'Answer' = yes, then choose your starting/ender points. 
-\n /n For example, if you set start_point = 0 and end_point = 20, then you'll pull the top 21 airports by air traffic in 2017. Also, the main limitation here is that the max range of airports that can be scraped at once is: 55 airports. In short, the script will throw an error if the 'end_point' - 'start_point' exceeds a search of >55 airports
+If 'Answer' = yes, then choose your starting/ender points. For example, if you set start_point = 0 and end_point = 20, then you'll pull the top 21 airports by air traffic in 2017. Also, the main limitation here is that the max range of airports that can be scraped at once is: 55 airports. In short, the script will throw an error if the 'end_point' - 'start_point' exceeds a search of >55 airports
 
 # start_point = 0
 # end_point   = 50 
