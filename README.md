@@ -10,7 +10,9 @@ Where do you want to go? These are you departing/arriving flight city parameter 
 # arv_city = ('Denver') 
 
 Do you want to choose the arrival destination based on the top US airports? 
-# Answer = ('yes') # INPUT yes/no --> Note: 'no' will return the cheapest roundtrip flight of the dep/arv cities from above
+Note: inputes required - 'yes' or 'no'. Inputtting 'no' will return the cheapest roundtrip flight for airports listed above
+
+# Answer = ('yes')
 
 If 'Answer' = yes, then choose your starting/ender points. 
 For example, if you set start_point = 0 and end_point = 20, then you'll pull the top 21 airports by air traffic in 2017
