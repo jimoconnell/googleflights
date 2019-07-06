@@ -5,36 +5,38 @@ This script allows you to find the cheapest individiual roundtrip ticket from on
 
 Provided below are the variables contained in the script + notes:
 
-# WHERE DO YOU WANT TO GO ---- Departure/Arrival Flight Destination Parameters (Required)
-dep_city = ('San Francisco')
-arv_city = ('Denver') 
+Where do you want to go? These are you departing/arriving flight city parameter (Required)
+# dep_city = ('San Francisco')
+# arv_city = ('Denver') 
 
-# DO YOU WANT TO CHOOSE ARRIVAL DESTINATION BASED BY THE TOP UNITED STATES AIRPORTS?
-Answer = ('yes') # INPUT yes/no --> 'no' will return the cheapest roundtrip flight of the dep/arv cities from above
+Do you want to choose the arrival destination based on the top US airports? 
+# Answer = ('yes') # INPUT yes/no --> Note: 'no' will return the cheapest roundtrip flight of the dep/arv cities from above
 
-# IF ABOVE ANSWER IS YES, CHOOSE YOUR STARTING/ENDING POINTS. FOR EXAMPLE, CHOOSE 0 IF YOU'D LIKE TO START WITH THE MOST
-# POPULAR AIRPORT CONTAINED IN THE XLSX FILE, THEN SPECIFY ENDPOINT TO DETERMINE # OF AIRPORTS TO SEARCH
-# EXAMPLE : {IF start_point = 0 and end_point = 20, then you'll look through the top 21 airports}
-start_point = 0, end_point   = 50 
+If 'Answer' = yes, then choose your starting/ender points. 
+For example, if you set start_point = 0 and end_point = 20, then you'll pull the top 21 airports by air traffic in 2017
+The only limitation here is that the max range of airports that can be scraped at once is: 55 airports
+In short, the script will throw an error if the 'end_point' - 'start_point' exceeds a search of >55 airports
 
-# only limitation here is that the max range of airports that can be scraped at once is: 55 airports
-# in short, the script will throw an error if the 'end_point' - 'start_point' exceeds a search of >55 airports
+# start_point = 0
+# end_point   = 50 
 
-# WHEN DO YOU WANT TO LEAVE -- Departure/Arrival Flight Date Parameters (Required)
-dep_date = '7/11/2019'
-arv_date = '7/14/2019'
+When do you want to leave? Departure/arrival flight date parameters (Required)
+# dep_date = '7/11/2019'
+# arv_date = '7/14/2019'
 
-# HOW MANY STOPS DO YOU WANT? - Put 0 for Non-Stop flight { 2 is the MAX }
-num_stops = '2'
+How many stops do you want to have? Put 0 for a non-stop flight search { 2 is the max number of stops }
+# num_stops = '2'
 
-# FOR YOUR DEPARTING FLIGHT --- WHAT TIME DO YOU WANT TO LEAVE AT? ~ ** Must be at least a 3 hour window! ** ~ (Required)
-dep_leave_time_1 = '6:15AM'
-dep_leave_time_2  = '8:45pM'
+For your departing flight, what time do you want to leave at? NOTE: Must be at least a 3 hour window! (Required)
+# dep_leave_time_1 = '6:15AM'
+# dep_leave_time_2  = '8:45pM'
 
-# DO YOU WANT TO DOWNLOAD YOUR DATA?
-csv_file_download = 'Yes'
+Do you want to download your data?
+# csv_file_download = 'Yes'
 
 # IS THERE A DIFFERENT AIRPORT DISPLAYING IN RESULTS? CHANGE AIRPORT BY ADJUSTING LIST INDEX (0 is default) 
 # THAT YOU SEEN IN COMMAND LINE. NOTE: ONLY APPLICABLE IF CHOOSING CUSTOM DEPARTURE/ARRIVAL DESTINATIONS
-dep_IATA_index = '0'
-arv_IATA_index = '2'
+Is there a different airport displaying in the results? Change airport by adjusting the list index (0 is default)
+Note: you will see these IATA codes printed in the command line. This is a way to debug every time the script executes
+# dep_IATA_index = '0'
+# arv_IATA_index = '0'
