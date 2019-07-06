@@ -32,9 +32,6 @@ For your departing flight, what time do you want to leave at? NOTE: Must be at l
 Do you want to download your data?
 # csv_file_download = 'Yes'
 
-# IS THERE A DIFFERENT AIRPORT DISPLAYING IN RESULTS? CHANGE AIRPORT BY ADJUSTING LIST INDEX (0 is default) 
-# THAT YOU SEEN IN COMMAND LINE. NOTE: ONLY APPLICABLE IF CHOOSING CUSTOM DEPARTURE/ARRIVAL DESTINATIONS
-Is there a different airport displaying in the results? Change airport by adjusting the list index (0 is default)
-Note: you will see these IATA codes printed in the command line. This is a way to debug every time the script executes
+Is there a different airport displaying in the results? Change airport by adjusting the list index (0 is default). Note: you will see these IATA codes printed in the command line. This is a way to debug every time the script executes
 # dep_IATA_index = '0'
 # arv_IATA_index = '0'
