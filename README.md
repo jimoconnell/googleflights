@@ -15,10 +15,10 @@ Answer = ('yes') # INPUT yes/no --> 'no' will return the cheapest roundtrip flig
 # IF ABOVE ANSWER IS YES, CHOOSE YOUR STARTING/ENDING POINTS. FOR EXAMPLE, CHOOSE 0 IF YOU'D LIKE TO START WITH THE MOST
 # POPULAR AIRPORT CONTAINED IN THE XLSX FILE, THEN SPECIFY ENDPOINT TO DETERMINE # OF AIRPORTS TO SEARCH
 # EXAMPLE : {IF start_point = 0 and end_point = 20, then you'll look through the top 21 airports}
-start_point = 0
-end_point   = 50 
+start_point = 0, end_point   = 50 
+
 # only limitation here is that the max range of airports that can be scraped at once is: 55 airports
-# in short, the script will throw an error if the start point exceeds a search of >55 airports
+# in short, the script will throw an error if the 'end_point' - 'start_point' exceeds a search of >55 airports
 
 # WHEN DO YOU WANT TO LEAVE -- Departure/Arrival Flight Date Parameters (Required)
 dep_date = '7/11/2019'
