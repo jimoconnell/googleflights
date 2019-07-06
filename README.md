@@ -3,7 +3,7 @@ Google flights scraper
 
 This script allows you to find the cheapest individiual roundtrip ticket from one airport to another - this includes price and itinerary. It also allows you to 1. specify your departing destination and 2. pull price/itinerary flight info based on a list of the faa's top US airports (https://www.faa.gov/airports/planning_capacity/passenger_allcargo_stats/passenger/). This webpage contains an xlsx file that, when 'Answer' variable = Yes, downloads to your local device. Once downloaded, the script looks at the index value variables, 'start_point' and 'end_point', and pulls those from the list of IATA airport codes contained in the xlsx file.
 
-# Provided below are the variables contained in the script + notes:
+# Definitions of variables contained in the script:
 
 Where do you want to go? These are you departing/arriving flight city parameter (Required)
 # dep_city = ('San Francisco')
